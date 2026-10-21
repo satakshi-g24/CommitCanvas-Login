@@ -1,0 +1,393 @@
+/* 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d1117;
+  color: #ffffff;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 35px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #238636;
+  border-radius: 16px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.subtitle {
+  color: #8b949e;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 20px;
+  background: #0d1117;
+  color: white;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #58a6ff;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  background: #238636;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2ea043;
+}
+
+.footer-text {
+  color: #8b949e;
+  font-size: 12px;
+  margin-top: 25px;
+} */
+
+
+
+/* newwwwwwwwwwwwwwwwwwww finalyyyyy */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #080c1b;
+  color: #f8fafc;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 16px;
+  background:
+    radial-gradient(ellipse at 15% 15%, #202d61 0%, transparent 38%),
+    radial-gradient(ellipse at 90% 85%, #501d50 0%, transparent 35%),
+    #080c1b;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 510px;
+  padding: 34px;
+  border: 1px solid #303b62;
+  border-radius: 24px;
+  background: rgba(15, 21, 43, 0.94);
+  box-shadow: 0 24px 80px #0008;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #4776ff, #d946ef);
+  color: white;
+  font-size: 19px;
+  font-weight: 800;
+  box-shadow: 0 0 25px #8b5cf655;
+}
+
+.brand h2 {
+  margin: 0;
+  font-size: 23px;
+}
+
+.brand p {
+  margin: 5px 0 0;
+  color: #a5b4d4;
+  font-size: 13px;
+}
+
+.tagline {
+  margin: 25px 0;
+  color: #c3cbe2;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.progress {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.progress-step {
+  flex: 1;
+  min-width: 0;
+  color: #8792b3;
+  font-size: 11px;
+}
+
+.progress-line {
+  height: 4px;
+  margin-bottom: 9px;
+  border-radius: 10px;
+  background: #29314c;
+}
+
+.progress-line.active {
+  background: linear-gradient(90deg, #4776ff, #d946ef);
+}
+
+.progress-step .current {
+  color: #f0abfc;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  letter-spacing: -0.7px;
+}
+
+.subtitle {
+  margin: 0 0 25px;
+  color: #aab5d1;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+label {
+  margin: 0 0 9px;
+  color: #e0e7ff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  min-width: 0;
+  padding: 14px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #354064;
+  border-radius: 11px;
+  outline: none;
+  background: #0b1126;
+  color: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input::placeholder {
+  color: #7783a5;
+}
+
+input:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 3px #a78bfa20;
+}
+
+.main-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 11px;
+  background: linear-gradient(100deg, #4776ff, #a855f7, #ec4899);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
+  box-shadow: 0 8px 24px #a855f72a;
+}
+
+.main-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px #a855f744;
+}
+
+.main-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.text-button {
+  align-self: flex-end;
+  padding: 0;
+  margin: -8px 0 22px;
+  border: none;
+  background: transparent;
+  color: #d8a4ff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.text-button:hover {
+  color: #f9a8d4;
+  text-decoration: underline;
+}
+
+form .text-button:last-child {
+  align-self: center;
+  margin: 18px 0 0;
+}
+
+.signup {
+  margin: 22px 0 0;
+  text-align: center;
+  color: #aab5d1;
+  font-size: 13px;
+}
+
+.signup .text-button {
+  display: inline;
+  margin: 0;
+  font-size: 13px;
+}
+
+.message {
+  padding: 12px 14px;
+  border: 1px solid #7354a8;
+  border-radius: 10px;
+  background: #25183d;
+  color: #e9d5ff;
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.how-it-works {
+  margin-top: 28px;
+  padding: 19px;
+  border: 1px solid #293453;
+  border-radius: 15px;
+  background: #0b1126;
+}
+
+.how-it-works h3 {
+  margin: 0 0 14px;
+  color: #f0abfc;
+  font-size: 14px;
+}
+
+.how-it-works p {
+  margin: 9px 0;
+  color: #b5bfd9;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.success-panel {
+  padding: 18px 0;
+  text-align: center;
+}
+
+.success-icon {
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 20px;
+  border: 1px solid #b794ff;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #344ca1, #8c3a9d);
+  color: white;
+  font-size: 35px;
+  box-shadow: 0 0 35px #a855f733;
+}
+
+.success-panel .subtitle {
+  margin-top: 12px;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 24px 19px;
+    border-radius: 19px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .brand h2 {
+    font-size: 21px;
+  }
+
+  .progress-step {
+    font-size: 10px;
+  }
+
+  .tagline {
+    font-size: 13px;
+  }
+}
